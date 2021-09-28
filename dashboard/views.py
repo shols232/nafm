@@ -7,3 +7,10 @@ class AdminDashboard(View):
     def get(self, request, *args, **kwargs):
         context = {}
         return render(request, 'dashboard/admin_dashboard.html', context)
+
+class MemberDashboard(View):
+    """Dashboard view for users."""
+
+    def get(self, request, *args, **kwargs):
+        context = {}
+        return render(request, 'dashboard/member_dashboard.html', context)
