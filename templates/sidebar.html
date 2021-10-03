@@ -1,0 +1,176 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin_dashboard.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">NAFM Member</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+
+    <!-- Nav Items-->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments"
+            aria-expanded="true" aria-controls="collapseMedia">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Posts</span>
+        </a>
+        <div id="collapseBlogPosts" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage Blog Posts:</h6>
+                <a class="collapse-item" href="buttons.html">All posts</a>
+                <a class="collapse-item" href="cards.html">Create posts</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMedia"
+            aria-expanded="true" aria-controls="collapseMedia">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Media</span>
+        </a>
+        <div id="collapseMedia" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage Media:</h6>
+                <a class="collapse-item" href="buttons.html">All Media</a>
+                <a class="collapse-item" href="cards.html">Upload media</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvents"
+            aria-expanded="true" aria-controls="collapseEvents">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Events</span>
+        </a>
+        <div id="collapseEvents" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage Events:</h6>
+                <a class="collapse-item" href="buttons.html">All events</a>
+                <a class="collapse-item" href="cards.html">Create events</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews"
+            aria-expanded="true" aria-controls="collapseNews">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>News</span>
+        </a>
+        <div id="collapseNews" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage News:</h6>
+                <a class="collapse-item" href="buttons.html">All news</a>
+                <a class="collapse-item" href="cards.html">Create news</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseELibrary"
+            aria-expanded="true" aria-controls="collapseELibrary">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>E-Library</span>
+        </a>
+        <div id="collapseELibrary" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage resurces:</h6>
+                <a class="collapse-item" href="{% url 'user_resource:e-library' %}">All resources</a>
+                <a class="collapse-item" href="cards.html">Upload resource</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseModules"
+            aria-expanded="true" aria-controls="collapseModules">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Modules</span>
+        </a>
+        <div id="collapseModules" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage modules:</h6>
+                <a class="collapse-item" href="{% url 'user_resource:modules' %}">All modules</a>
+                <a class="collapse-item" href="cards.html">create module</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownloads"
+            aria-expanded="true" aria-controls="collapseDownloads">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Downloads</span>
+        </a>
+        <div id="collapseDownloads" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Public Downloads:</h6>
+                <a class="collapse-item" href="{% url 'user_resource:documents' %}">All documents</a>
+                <a class="collapse-item" href="cards.html">upload document</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayments"
+            aria-expanded="true" aria-controls="collapsePayments">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Payments</span>
+        </a>
+        <div id="collapsePayments" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage Paymentss:</h6>
+                <a class="collapse-item" href="buttons.html">All payments</a>
+                <a class="collapse-item" href="cards.html">Generate payment</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMembers"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Members</span>
+        </a>
+        <div id="collapseMembers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Manage members:</h6>
+                <a class="collapse-item" href="buttons.html">Add members</a>
+                <a class="collapse-item" href="buttons.html">Active members</a>
+                <a class="collapse-item" href="buttons.html">Inactive members</a>
+                <a class="collapse-item" href="cards.html">Unapproved posts</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
