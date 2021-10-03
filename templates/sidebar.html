@@ -96,7 +96,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Manage resurces:</h6>
                 <a class="collapse-item" href="{% url 'user_resource:e-library' %}">All resources</a>
-                <a class="collapse-item" href="cards.html">Upload resource</a>
+                <a class="collapse-item" href="{% url 'user_resource:e-library-add' %}">Upload resource</a>
             </div>
         </div>
     </li>
@@ -111,7 +111,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Manage modules:</h6>
                 <a class="collapse-item" href="{% url 'user_resource:modules' %}">All modules</a>
-                <a class="collapse-item" href="cards.html">create module</a>
+                <a class="collapse-item" href="{% url 'user_resource:module-add' %}">create module</a>
             </div>
         </div>
     </li>
@@ -127,7 +127,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Public Downloads:</h6>
                 <a class="collapse-item" href="{% url 'user_resource:documents' %}">All documents</a>
-                <a class="collapse-item" href="cards.html">upload document</a>
+                <a class="collapse-item" href="{% url 'user_resource:document-add' %}">upload document</a>
             </div>
         </div>
     </li>

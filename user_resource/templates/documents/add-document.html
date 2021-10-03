@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Documents{% endblock title %}
+{% block page-content %}
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    {% include 'includes/messages.html' %}
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Upload document for public download</h1>
+    </div>
+
+    {% include 'includes/add-resource-form.html' %}
+</div>
+<!-- /.container-fluid -->
+{% endblock page-content %}

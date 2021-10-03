@@ -1,0 +1,24 @@
+<!-- This is usable for document, elibrary and module pages. -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Title here..." value={{form.title.value}}>
+        {% include 'includes/errors.html' with errors=form.title.errors %}
+    </div>
+    <div class="form-group">
+        <div class="custom-file">
+            <input type="file" name="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" id="customFileNameLabel" for="customFile">Resource</label>
+        </div>
+        {% include 'includes/errors.html' with errors=form.file.errors %}
+    </div>
+    <div class="form-group">
+        <label for="validationTextarea">Description</label>
+        <textarea class="form-control" name="description" id="validationTextarea"
+            placeholder="Required example textarea"></textarea>
+        {% include 'includes/errors.html' with errors=form.description.errors %}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

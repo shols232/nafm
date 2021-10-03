@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}E-Library{% endblock title %}
+{% block page-content %}
+<div class="container-fluid">
+    {% include 'includes/messages.html' %}
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Create E-Library Resource</h1>
+    </div>
+
+    {% include 'includes/add-resource-form.html' %}
+</div>
+<!-- /.container-fluid -->
+{% endblock page-content %}
