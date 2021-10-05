@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     # internal apps
     'dashboard',
     'user_resource',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ MESSAGE_TAGS = {
         messages.WARNING: 'alert-warning',
         messages.ERROR: 'alert-danger',
  }
+
+APPEND_SLASH = True
