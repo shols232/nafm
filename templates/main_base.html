@@ -5,89 +5,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Quick – Website UI Kit (FREE)</title>
-    <!-- Preloader -->
-    <style>
-        @keyframes hidePreloader {
-            0% {
-                width: 100%;
-                height: 100%;
-            }
-
-            100% {
-                width: 0;
-                height: 0;
-            }
-        }
-
-        body>div.preloader {
-            position: fixed;
-            background: white;
-            width: 100%;
-            height: 100%;
-            z-index: 1071;
-            opacity: 0;
-            transition: opacity .5s ease;
-            overflow: hidden;
-            pointer-events: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body:not(.loaded)>div.preloader {
-            opacity: 1;
-        }
-
-        body:not(.loaded) {
-            overflow: hidden;
-        }
-
-        body.loaded>div.preloader {
-            animation: hidePreloader .5s linear .5s forwards;
-        }
-    </style>
-    <script>
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.querySelector('body').classList.add('loaded');
-            }, 300);
-        });
-    </script>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/ihsb-logo.jpeg" type="image/png"><!-- Font Awesome -->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <!-- Quick CSS -->
-    <link rel="stylesheet" href="{% static 'assets/css/quick-website.css' %}" id="stylesheet">
+    <title>IHSB</title>
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
     <!-- Navbar -->
-   {% include 'main_navbar.html' %}
+    {% include 'main_navbar.html' %}
 
     <!-- Main content -->
     {% block content %}
     {% endblock content %}
-    
+
     {% include 'main_footer.html' %}
-    <!-- Core JS  -->
-    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'assets/libs/svg-injector/dist/svg-injector.min.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Quick JS -->
-    <script src="{% static 'assets/js/quick-website.js' %}"></script>
-    <!-- Feather Icons -->
     <script>
-        feather.replace({
-            'width': '1em',
-            'height': '1em'
-        })
     </script>
     {% block js %}
     {% endblock js %}
